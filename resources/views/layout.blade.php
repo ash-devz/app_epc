@@ -29,7 +29,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
-            <p class="mt-4">At vero eos et accusamus et iusto odio dignissim os ducimus qui blanditiis praesentium</p>
+            <p class="mt-4">Energy Performance Certificate Finder & Analysis Tool</p>
           </div>
         </div>
       </div>
