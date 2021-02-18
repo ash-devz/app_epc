@@ -275,6 +275,8 @@
 @stop
 @section('custom-scripts')
 <script type="text/javascript">
-  localStorage.setItem("current-efficiency","{{$certificate['current-energy-efficiency']}}") ;
+  (function ($) {
+    localStorage.setItem("current-efficiency","{{$certificate['current-energy-efficiency']}}") ;
+  })(jQuery)
 </script>
 @stop

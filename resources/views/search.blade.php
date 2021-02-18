@@ -91,6 +91,8 @@
 @stop
 @section('custom-scripts')
 <script type="text/javascript">
-  localStorage.removeItem("current-efficiency");
+  (function ($) {
+    localStorage.removeItem("current-efficiency");
+  })(jQuery)
 </script>
 @stop
