@@ -218,7 +218,8 @@
                 <p class=" mb-3 text-justify">Making any of the recommended changes will improve this property’s energy efficiency.</p>
                 <p class=" mb-3 text-justify">If you make all of the recommended changes, this will improve the property’s energy rating and score from {{$certificate['current-energy-rating']}} ({{$certificate['current-energy-efficiency']}}) to {{$certificate['potential-energy-rating']}} ({{$certificate['potential-energy-efficiency']}}).</p>
                 <br/>
-                @foreach($recommendations as $key=>$recommendation)
+                @isset($recommendations['rows'])
+                @foreach($recommendations['rows'] as $key=>$recommendation)
                 <div class="job-details-desc-item">
                   <h5 class=" mb-2 border-bottom">Recommendation #{{$key+1}} </h5>
                   <p class=" mb-2">{{$recommendation['improvement-id-text']}}</p>
@@ -226,6 +227,12 @@
                 </div>
                 <br/>
                 @endforeach
+                @else
+                <div class="job-details-desc-item">
+                  <h5 class=" mb-2">No Recommendation Available </h5>
+
+                </div>
+                @endisset
               </div>
             </div>
           </div>

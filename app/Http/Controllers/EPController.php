@@ -40,8 +40,8 @@ class EPController extends Controller
       'Accept' => 'application/json'
     ])->get('https://epc.opendatacommunities.org/api/v1/domestic/recommendations/'.$lmKey);
 
-    if($certificate->successful() && $recommendations->successful()){
-      return view('view')->with(['recommendations'=>$recommendations['rows'],'certificate'=>$certificate['rows'][0]]);
+    if($certificate->successful()){
+      return view('view')->with(['recommendations'=>$recommendations,'certificate'=>$certificate['rows'][0]]);
     }
     else{
       abort(404);
