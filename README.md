@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/ash-devz/app_epc/master/public/assets/images/epc-demo.png" width="500"></a></p>
+<p align="center"><a href="http://ec2-3-141-195-42.us-east-2.compute.amazonaws.com/" target="_blank"><img src="https://raw.githubusercontent.com/ash-devz/app_epc/master/public/assets/images/epc-demo.png" width="500"></a></p>
 
 
 ## Energy Performance Certificate Finder & Analysis Tool
