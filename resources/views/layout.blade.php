@@ -13,17 +13,6 @@
         </div>
       </div>
     </div>
-    <header id="topnav" class="defaultscroll scroll-active">
-      <div class="container">
-        <div class="menu-extras">
-          <div class="menu-item">
-            <a class="navbar-toggle">
-              <div class="lines"><span></span> <span></span> <span></span></div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </header>
     @yield('page-content')
     <footer class="footer">
       <div class="container">
